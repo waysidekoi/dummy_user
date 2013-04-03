@@ -1,0 +1,19 @@
+<div class="container">
+  <font color="red"><p><%= @message if @message %></p></font>
+  <form method="post" action="/sign_up">
+    <p>New User Registration</p>
+    Email: <input type="text" name="email">
+    Password: <input type="password" name="password">
+    <input type="submit">
+  </form>
+</div>
+
+<div class="container">
+    <font color="red"><p><%= @message2 if @message2 %></p></font>
+  <form method="post" action="/login">
+    <p>Login</p>
+    Email: <input type="text" name="email">
+    Password: <input type="password" name="password">
+    <input type="submit">
+  </form>
+</div>
